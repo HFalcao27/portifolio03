@@ -1,0 +1,63 @@
+.cabecalho__menu-hamburguer{
+    width: 24px; /*Largura*/
+    height:24px; /*altura*/
+    background-image: url("../assets/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block; /*Permite está tudo em altura e lagura*/
+}
+
+.cabecalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /*Isso aqui serve para manter o algo em qualquer lugar, cima, baixo, direita , esquerda.*/
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 1em;
+}
+
+/*Seção de edição do  Menu Oculto.*/
+
+.lista-menu{  /*Isso aqui serve para ocultar o Menu */
+    display: none;
+    position: absolute; /*Segue o raciocinio da linha 15 de manter o Menu pra baixo. PARA FICAR DIFENTE DE ESTATICO*/
+    top: 100%;
+    width: 50vw; /*Aumentou o tamanho do menu*/
+}
+
+.container__botao:checked ~ .lista-menu{ /* prestar atenção nisso/ estudar isso. Container_botao chamou o imput. Checked é uma pseudoclasse. O ~ é combinador que vai combinar o elemento que vem em seguida com o de antes. É quase como uma incondicional.*/
+    display: block;
+}
+
+.lista-menu__titulo,
+.lista-menu__item{
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu__titulo{
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista-menu__link{
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /*os webkit pra funcionar em outros navegadores*/
+    background-clip: text; /*mantem o backgorund apenas onde tem texto*/
+    text-transform: uppercase;
+
+}
+
+.container__botao {
+    display: none; /*Vai retirar o botão de check visivelmente*/
+}
+

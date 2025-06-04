@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scaler=1.0">
+        <title>AluraBooks</title>
+        <link rel="stylesheet" href="./style/reset.css"> <!--Serve para resetar todo tipo de configuração já pré definida.
+        Ou que o usuario entre por outro navegador e tenha experiencias diferentes.-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style/styles.css">
+    </head>
+
+    <body>
+        <header class="cabecalho"> <!--Header é uma tag semantica, fica subentendido que é o cabeçario da página.-->
+            <div class="container">
+                <input type="checkbox" id="menu" class="container__botao"> <!--Serve para interação para MENU. O checbox abre um caixa para marcação. -->
+                <label for="menu"> <!--Interação para menu/ FAZ UMA ESPECIA DE ASSOSSIAÇÃO-->
+                <span class="cabecalho__menu-hamburguer" class="container__imagem"></span><!--Foi precisar usar a tag span porque se fosse pra usar a tag img ficaria estatica.-->
+                </label>
+                <ul class="lista-menu">
+                    <li class="lista-menu__titulo">Categorias</li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Programação</a>
+                    </li>
+                                        <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Front-end</a>
+                    </li>                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Infraestutura</a>
+                    </li>
+                                        <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Business</a>
+                    </li>
+                                        <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Design & UX</a>
+                    </li>
+                </ul>
+                <img src="assets/Logo.svg" alt="Logo do Alurabooks" class="container__imagem">
+            </div>
+            <div class="container">
+                <a href="#"><img src="assets/Favoritos.svg" alt= "Meus Favoritos" class="container__imagem"></a>
+                <a href="#"><img src="assets/Compras.svg" alt="Carrinos de compras" class="container__imagem"></a>
+                <a href="#"><img src="assets/Usuario.svg" alt="Meu Perfil" class="container__imagem"></a>
+            </div>
+        </header>
+        <section class="banner">
+            <h2 class="banner__titulo"> Já sabe por onde começar</h2>
+            <p class="banner__texto">Encontre em nossa estante o que precisa para o seu desenvolvimento</p>
+            <input type="search" class="banner__pesquisa" placeholder="Bora ler?"><!--O PLACEHOLDER É ONDE FICA O QUE ESTÁ ESCRITO DENTRO DO BALÃO DE PESQUISA.-->
+        </section>
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">Novos Lançamentos</h2>
+        </section>
+    </body>
+
+    <footer>
+    </footer>
+</html>

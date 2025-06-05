@@ -61,3 +61,48 @@
     display: none; /*Vai retirar o botão de check visivelmente*/
 }
 
+.container__titulo { /*Para o titulo não aparece quando estiver no modo celular*/
+    display: none;
+}
+
+.opçoes {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) { /*Isso se chama MEDIA QUERY PARA USAR EM TAMANHO DE TELA. SCREEN É TELA. AND É PARA O MINIMO SER O QUE FOI PROPOSTO A SEGUIR(QUANDO O MINIMO DE TELA, TRADUÇÃO LITERAL. quando faz do tamanho do computador e depois diminui para o tamanho da tela usasse max-width. */
+    .container__titulo, .container__titulo--negrito {
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+    }   
+}
+
+.container__titulo {
+    font-weight: 400;
+    display: block;
+}
+
+.container__titulo--negrito{
+    font-weight: 700;
+}
+
+.opçoes {
+    display: flex;
+}
+
+.opçoes__item {
+    padding: 0 1em;
+    text-transform: uppercase;
+}
+
+.opçoes__link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.container__imagem-transparent {
+    display: none;
+}
+
+.cabecalho__menu-hamburguer{
+    display: none;
+}

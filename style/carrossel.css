@@ -1,4 +1,4 @@
-.carrossel__titulo{
+.carrossel__titulo {
     color: var(--laranja);
     background-color: var(--branco);
     text-align: center;
@@ -8,7 +8,7 @@
     padding: 1em 0 0.5em 0; /* priemeiro 1 em são as 12h 0 são as 3horas e assim por diante*/
 }
 
-.swiper-slide img{
+.swiper-slide img {
     width: 100%;
 }
 

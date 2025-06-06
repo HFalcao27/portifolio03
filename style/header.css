@@ -65,12 +65,13 @@
     display: none;
 }
 
-.opçoes {
+.opçoes  {
     display: none;
 }
 
 @media screen and (min-width: 1024px) { /*Isso se chama MEDIA QUERY PARA USAR EM TAMANHO DE TELA. SCREEN É TELA. AND É PARA O MINIMO SER O QUE FOI PROPOSTO A SEGUIR(QUANDO O MINIMO DE TELA, TRADUÇÃO LITERAL. quando faz do tamanho do computador e depois diminui para o tamanho da tela usasse max-width. */
-    .container__titulo, .container__titulo--negrito {
+    .container__titulo, 
+    .container__titulo--negrito {
         font-family: var(--fonte-secundaria);
         font-size: 30px;
     }   
@@ -104,5 +105,14 @@
 }
 
 .cabecalho__menu-hamburguer{
+    display: none;
+}
+
+.opçoes__botao:checked ~.lista-menu { /*Muito interessante aprender isso. SERVE PARA CLICAR NOS LINK DO MENU E  EM CADA LINK ABRIR UM MENU*/
+    display: block;
+    width: auto;
+}
+
+.opçoes__botao {
     display: none;
 }

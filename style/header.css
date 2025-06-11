@@ -65,8 +65,12 @@
     display: none;
 }
 
-.opçoes  {
+.opçoes  {   /*A VERDADE QUE ESSE  BUG NÃO ESTA SIDO RESOLVIDO. LEMBRAR FUTURAMENTE DE RESOLVER ESSE BUG*/
     display: none !important;
+}
+
+.container__texto {
+    display: none !important; 
 }
 
 @media screen and (min-width: 1024px) { /*Isso se chama MEDIA QUERY PARA USAR EM TAMANHO DE TELA. SCREEN É TELA. AND É PARA O MINIMO SER O QUE FOI PROPOSTO A SEGUIR(QUANDO O MINIMO DE TELA, TRADUÇÃO LITERAL. quando faz do tamanho do computador e depois diminui para o tamanho da tela usasse max-width. */
@@ -74,45 +78,66 @@
     .container__titulo--negrito {
         font-family: var(--fonte-secundaria);
         font-size: 30px;
+     }    
+
     .container__imagem-transparent {
     display: none; }
 
     .opçoes {
     display: flex;
     }
-    
-    }   
-}
 
-.container__titulo {
-    font-weight: 400;
-    display: block;
-}
+    .container__titulo {
+        font-weight: 400;
+        display: block;
+    }
 
-.container__titulo--negrito{
-    font-weight: 700;
-}
+    .container__titulo--negrito{
+        font-weight: 700;
+    }
 
-.opçoes__item {
-    padding: 0 1em;
-    text-transform: uppercase;
-}
+    .opçoes__item {
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
 
-.opçoes__link {
-    text-decoration: none;
-    color: #000000;
-}
+    .opçoes__link {
+        text-decoration: none;
+        color: #000000;
+    }
 
+    .cabecalho__menu-hamburguer{
+        display: none;
+    }
 
-.cabecalho__menu-hamburguer{
-    display: none;
-}
+    .opçoes__botao {
+        display: none;
+    }
 
-.opçoes__botao:checked ~.lista-menu { /*Muito interessante aprender isso. SERVE PARA CLICAR NOS LINK DO MENU E  EM CADA LINK ABRIR UM MENU*/
+    .opçoes__botao:checked ~.lista-menu { /*Muito interessante aprender isso. SERVE PARA CLICAR NOS LINK DO MENU E  EM CADA LINK ABRIR UM MENU*/
     display: block;
     width: auto;
+    }
+
 }
 
-.opçoes__botao {
-    display: none;
+@media screen and (min-width: 1728px) {
+    .container__link {
+        display: flex;
+        align-items: center;/*é um tributo que só pra da usar com o flexbox*/
+        text-decoration: none;
+        color: #000000;
+       }
+
+       .cabecalho {
+        padding: 0 2em;
+       }
+
+       .opçoes {
+        margin-right: auto;
+       }
+       
+       .container__texto{
+        display: block;
+       }
 }
